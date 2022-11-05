@@ -1,7 +1,10 @@
 use std::io;
+use rand::Rng;
 
 fn main() {
     println!("Guess number");
+
+    let secret_number = rand::thread_rng().gen_range(1..=100);
 
     println!("input guess");
 
